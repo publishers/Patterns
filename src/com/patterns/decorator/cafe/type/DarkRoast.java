@@ -1,6 +1,6 @@
-package com.patterns.decorator.caffe.type;
+package com.patterns.decorator.cafe.type;
 
-import com.patterns.decorator.caffe.Beverage;
+import com.patterns.decorator.cafe.Beverage;
 
 public class DarkRoast extends Beverage {
 

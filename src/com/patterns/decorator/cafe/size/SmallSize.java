@@ -1,6 +1,6 @@
-package com.patterns.decorator.caffe.size;
+package com.patterns.decorator.cafe.size;
 
-import com.patterns.decorator.caffe.Beverage;
+import com.patterns.decorator.cafe.Beverage;
 
 public class SmallSize extends Size {
   private Beverage beverage;

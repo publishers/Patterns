@@ -1,17 +1,17 @@
 package com.patterns.decorator;
 
-import com.patterns.decorator.caffe.Beverage;
-import com.patterns.decorator.caffe.condiment.Mocha;
-import com.patterns.decorator.caffe.condiment.Soy;
-import com.patterns.decorator.caffe.condiment.Whip;
-import com.patterns.decorator.caffe.size.BigSize;
-import com.patterns.decorator.caffe.size.MiddleSize;
-import com.patterns.decorator.caffe.size.SmallSize;
-import com.patterns.decorator.caffe.type.Espresso;
-import com.patterns.decorator.caffe.type.DarkRoast;
-import com.patterns.decorator.caffe.type.HouseBlend;
+import com.patterns.decorator.cafe.Beverage;
+import com.patterns.decorator.cafe.condiment.Mocha;
+import com.patterns.decorator.cafe.condiment.Soy;
+import com.patterns.decorator.cafe.condiment.Whip;
+import com.patterns.decorator.cafe.size.BigSize;
+import com.patterns.decorator.cafe.size.MiddleSize;
+import com.patterns.decorator.cafe.size.SmallSize;
+import com.patterns.decorator.cafe.type.Espresso;
+import com.patterns.decorator.cafe.type.DarkRoast;
+import com.patterns.decorator.cafe.type.HouseBlend;
 
-public class DecoratorDemoApp {
+public class DemoCafe {
   public static void main(String[] args) {
     Beverage beverage = new Espresso();
     beverage = new SmallSize(beverage);

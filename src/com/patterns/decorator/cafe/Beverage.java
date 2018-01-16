@@ -1,4 +1,4 @@
-package com.patterns.decorator.caffe;
+package com.patterns.decorator.cafe;
 
 public abstract class Beverage {
   protected String description = "Unknown Beverage";
