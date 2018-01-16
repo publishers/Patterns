@@ -1,8 +1,4 @@
-package ObserverPattern;
-
-/**
- * Created by sergey on 23.05.16.
- */
+package com.patterns.observer.model;
 
 public abstract class Observer {
     protected Subject subject;

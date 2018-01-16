@@ -1,10 +1,9 @@
-package ObserverPattern;
+package com.patterns.observer.model.impl;
 
-/**
- * Created by sergey on 23.05.16.
- */
+import com.patterns.observer.model.Observer;
+import com.patterns.observer.model.Subject;
 
-public class HexaObserver extends Observer{
+public class HexaObserver extends Observer {
 
     public HexaObserver(Subject subject){
         this.subject = subject;
