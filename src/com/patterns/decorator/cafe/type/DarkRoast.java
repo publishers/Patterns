@@ -1,15 +1,17 @@
 package com.patterns.decorator.cafe.type;
 
 import com.patterns.decorator.cafe.Beverage;
+import com.patterns.decorator.cafe.BeverageSize;
 
 public class DarkRoast extends Beverage {
 
-  public DarkRoast() {
+  public DarkRoast(BeverageSize beverageSize) {
+    size = beverageSize;
     description = "Dark roast beverage";
   }
 
   @Override
   public double cost() {
-    return 1.5;
+    return size.costFromSize(1.5);
   }
 }

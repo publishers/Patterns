@@ -7,11 +7,12 @@ public class Milk extends CondimentDecorator {
 
   public Milk(Beverage beverage) {
     this.beverage = beverage;
+    this.size = beverage.getSize();
   }
 
   @Override
   public double cost() {
-    return .57 + beverage.cost();
+    return beverage.cost() + size.costFromSize(.57);
   }
 
   @Override
