@@ -1,34 +1,21 @@
 package com.patterns.decorator.cafe;
 
 public enum BeverageSize {
-  VENTI {
-    private static final double PERCENTAGE_COST = 20;
+  VENTI(20),
+  GRANDE(15),
+  TALL(5);
 
-    @Override
-    public double costFromSize(double cost) {
-      return calculateCost(PERCENTAGE_COST, cost);
-    }
-  },
-  GRANDE {
-    private static final double PERCENTAGE_COST = 15;
+  private final double percentageCost;
 
-    @Override
-    public double costFromSize(double cost) {
-      return calculateCost(PERCENTAGE_COST, cost);
-    }
-  },
-  TALL {
-    private static final double PERCENTAGE_COST = 5;
+  BeverageSize(double percentageCost) {
+    this.percentageCost = percentageCost;
+  }
 
-    @Override
-    public double costFromSize(double cost) {
-      return calculateCost(PERCENTAGE_COST, cost);
-    }
-  };
+  public double costFromSize(double cost) {
+    return calculateCost(percentageCost, cost);
+  }
 
-  public abstract double costFromSize(double cost);
-
-  private static double calculateCost(double percent, double cost){
+  private static double calculateCost(double percent, double cost) {
     return cost + cost * percent / 100.0;
   }
 }
